@@ -1,34 +1,32 @@
-import React from "react";
-
 function Food({name, pic}) {  
   return (
     <div>
       <h1>I like {name}</h1>
-      <img src={pic} alt={name}/>
-    </div>    
+      <img src={pic} alt={name} />
+    </div>
   );
 } 
 
-const foodIlLike = [
+const foodILike = [
   {
+    id: 1,
     name: "Kimchi",
-    image: "https://static8.depositphotos.com/1354142/970/i/600/depositphotos_9707854-stock-photo-kimchi-korean-food.jpg"
+    image:
+      "https://media.istockphoto.com/photos/kimchi-picture-id172471553?b=1&k=6&m=172471553&s=170667a&w=0&h=GPB1K4xvafnDAZmwRr8UwbkPsqaYcVndTdKAObl1z_A=",
   },
   {
+    id: 2,
     name: "Gimbap",
-    image: "https://d3af5evjz6cdzs.cloudfront.net/images/uploads/800x0/vegetable-kimbap_93f13ec832638b9491bbf59a39d51d4e.jpg"
+    image:
+      "https://images.unsplash.com/photo-1608731001176-18531c721242?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Z2ltYmFwfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
   },
-  {
-    name: "Apple",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxDXMU7WFDfGokf37S9lb_Eyb8EoxVDvKhzg&usqp=CAU"
-  }
 ];
 
 function App() {
   return (
     <div className="App">      
-      {foodIlLike.map(item => (
-        <Food name={item.name} pic={item.image} />
+      {foodILike.map(item => (
+        <Food key={item.id}  pic={item.image} />
       ))}
     </div>
   ); 
