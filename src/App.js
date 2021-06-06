@@ -7,7 +7,7 @@ function Food({name, pic}) {
       <img src={pic} alt={name}/>
     </div>    
   );
-}
+} 
 
 const foodIlLike = [
   {
