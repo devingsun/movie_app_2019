@@ -19,7 +19,7 @@ class App extends React.Component {
   }
   async componentDidMount(){
     this.getMovies();
-  }
+  } 
 
   render() {    
     const { isLoading, movies } = this.state;
