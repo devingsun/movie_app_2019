@@ -79,3 +79,12 @@ html, body, #potato {
 .movie__summary {
     font-size: 20px;
 }
+
+.navArea {
+    background-color: greenyellow;
+    width: 5%;
+    margin: 20px;
+    float: left;
+    font-family: sans-serif;
+    
+ }
